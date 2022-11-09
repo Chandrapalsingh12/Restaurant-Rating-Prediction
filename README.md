@@ -1,4 +1,4 @@
-<h1>Project Title:</h1> Restaurant Rating Prediction
+<h1>Project Title: Restaurant Rating Prediction </h1>
 
 This is a Machine Learning Model that will help
 various Zomato Restaurants to predict their respective Ratings based on certain
