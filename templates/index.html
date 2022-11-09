@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Rating Prediction</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <img
+    class="demo-bg"
+    src="../static/Image/bg.jpg"
+    alt=""
+  >
+    <div class="main">
+        <h1>Chose The Give values</h1>
+        <form action= {{ url_for("Home") }} , method="post">
+            <div class="formcontain">
+                <label for="Laptop">Online_Order:</label>
+
+                <select name="online_order">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+
+                <label for="Laptop">Book_Table:</label>
+                <select name="book_table">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+
+                <label for="Laptop">Votes:</label>
+                <select name="votes">
+                    {% for i in votes %}
+                    <option value={{i}}>{{i}}</option>
+                {% endfor %}
+                </select>
+
+                <label for="Laptop">Restaunt_Type:</label>
+                <select name="rest_type">
+                     {% for i in rest_type %}
+                        <option value={{i}}>{{i}}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="Laptop">Cuisines:</label>
+                <select name="cuisines">
+                     {% for i in cuisines %}
+                        <option value={{i}}>{{i}}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="Laptop">Approx_cost(for two people):</label>
+                <select name="approx_cost">
+                     {% for i in approx_cost %}
+                        <option value={{i}}>{{i}}</option>
+                    {% endfor %}
+                </select>
+                
+                <label for="Laptop">Listed_in(type)	:</label>
+                <select name="listed_in">
+                     {% for i in listed_in %}
+                        <option value={{i}}>{{i}}</option>
+                    {% endfor %}
+                </select>
+                
+                <label for="Laptop">Food_Reviews:</label>
+                <select name="reviews">
+                     {% for i in reviews %}
+                        <option value={{i}}>{{i}}</option>
+                    {% endfor %}
+                </select>
+
+                <button type="submit" value="Submit" class="btn">Submit</button>
+            </div>
+
+
+            <!-- <select name="brand" id="cars">
+              {% for i in brand %}
+              <option value={{i}}>{{i}}</option>
+              {% endfor %}
+            </select>
+            <br> -->
+        </form>
+
+    </div>
+    
+</body>
+</html>

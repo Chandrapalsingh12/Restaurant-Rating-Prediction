@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(189, 216, 239);
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+label{
+    font-family: 'Raleway', sans-serif;
+
+}
+.main{
+    margin: 20;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+.demo-bg {
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
+.formcontain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.selectbox {
+    position: relative;
+}
+
+.selectbox::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: .7rem;
+    width: 0;
+    height: 0;
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+select {
+    border: 1px solid #EEE;
+    border-radius: .25rem;
+    padding: .5rem 1.5rem .5rem .5rem;
+    display: flex;
+    background-color: white;
+    outline: 0;
+    cursor: pointer;
+    appearance: none;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+.btn {
+    background: transparent;
+    width: 200px;
+    position: relative;
+    padding: 15px;
+    color: #1ECD97;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 500ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    border-radius: 4px;
+    font-weight: 600;
+    overflow: hidden;
+    border: 2px solid #1ECD97;
+    text-decoration: none;
+  }
+  
